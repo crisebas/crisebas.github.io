@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.start-button {
+    font-family: 'Balsamiq Sans', cursive;
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    outline: ridge;
+}
+
+.hide{
+    display: none;
+}
+
+.ball{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 450px;
+    left: 900px;
+    background: lightslategray;
+}
+
