@@ -42,17 +42,20 @@ class Game{
     }
 
     gameOver(){
-        swal("Your score is", this.score.toString()+"/"+MAX_SCORE.toString()).then(() => {
+        swal(
+            "Your score is", 
+            this.score.toString()+"/"+MAX_SCORE.toString(),
+            {
+                closeOnClickOutside: false,
+            }
+            ).then(() => {
             this.deleteClickEvent()
             ball.classList.add('hide')
             this.init()
-        })
+            })
     }
 
     chooseNextBallByTime(){
-        console.log("ballNumber="+this.ballNumber)
-        console.log("score="+this.score)
-        console.log("time="+this.time)
         this.ballNumber++
         if(this.ballNumber == MAX_SCORE){
             this.gameOver()
