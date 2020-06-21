@@ -1,17 +1,17 @@
 const startButton = document.getElementById('start-button')
 const ball = document.getElementById('ball')
 const MIN_SIZE = 50
-const MAX_SIZE = 150
-const MIN_X = 50
-const MIN_Y = 50
-const MAX_X = 1700
-const MAX_Y = 750
+const MAX_SIZE = 100
+const MIN_X = 5
+const MIN_Y = 5
+const MAX_X = 80
+const MAX_Y = 80
 const MAX_SCORE = 10
 
 class Game{
     constructor(){
         this.init()
-        setTimeout(this.showBall, 1500);
+        setTimeout(this.showBall, 1500)
     }
 
     init(){
@@ -112,12 +112,12 @@ class Game{
 
     getPositionX(){
         const positionY = Math.floor(Math.random() * (MAX_X - MIN_X + 1)) + MIN_X
-        return positionY.toString() + "px"
+        return positionY.toString() + "%"
     }
 
     getPositionY(){
         const positionX = Math.floor(Math.random() * (MAX_Y - MIN_Y + 1)) + MIN_Y
-        return positionX.toString() + "px"
+        return positionX.toString() + "%"
     }
 
     getColorBall(){

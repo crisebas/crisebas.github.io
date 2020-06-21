@@ -8,14 +8,13 @@ body {
 
 .start-button {
     font-family: 'Balsamiq Sans', cursive;
-    width: 400px;
-    height: 100px;
+    width: 20vw;
     background: #ecf0f1;
     color: #2c3e50;
-    font-size: 2.5rem;
+    font-size: 2vw;
     position: absolute;
-    top: calc(50% - 50px);
-    left: calc(50% - 200px);
+    top: 40%;
+    left: 40%;
     outline: ridge;
 }
 
@@ -28,8 +27,8 @@ body {
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    top: 450px;
-    left: 900px;
+    top: 40%;
+    left: 50%;
     background: lightslategray;
 }
 
